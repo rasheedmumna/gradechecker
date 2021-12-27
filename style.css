@@ -1,0 +1,41 @@
+body{
+    background-color: brown;
+}
+
+.container{
+    margin: 0 auto;
+    width: 400px;
+}
+.result input {
+    width: 300px;
+    height: 30px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    padding-left: 10px;
+    
+}
+.result{
+    border: 2px solid black;
+    padding: 20px;
+    background-color: darkslategrey;
+}
+.result button {
+    width: 100px;
+    height: 30px;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    background-color: green;
+    color: white;
+    
+}
+#show{
+    background-color: red;
+    color: white;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 30px;
+    padding-left: 20px;
+}
+
+
