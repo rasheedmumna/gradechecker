@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Grade converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="result">
+            <input type="" id="convert">
+            <button onclick="checker()">
+                Click
+            </button>
+            <p id='show'></p>
+        </div>
+    </div>
+    <script>
+        function checker() {
+            var check = document.getElementById('convert').value;
+
+            if (check >= 80 && check <= 100) {
+                // alert("A+");
+                document.getElementById("show").innerHTML = ("A+");
+            }
+            if (check >= 70 && check <= 79) {
+                document.getElementById("show").innerHTML = ("A");
+                //  alert("A");
+            }
+            if (check >= 60 && check <= 69) {
+                document.getElementById("show").innerHTML = ("B");
+                // alert("B")
+            }
+            if (check >= 50 && check <= 59) {
+                document.getElementById("show").innerHTML = ("C");
+                //    alert("C")
+            }
+            if (check >= 33 && check <= 49) {
+                document.getElementById("show").innerHTML = ("D");
+                //  alert("D")
+            }
+            if (check <= 33) {
+                document.getElementById("show").innerHTML = ("FAIL");
+                //    alert('fail')
+            }
+            else {
+                // document.getElementById('show').innerHTML = ("not");
+            }
+        }
+    </script>
+</body>
+
+</html>
